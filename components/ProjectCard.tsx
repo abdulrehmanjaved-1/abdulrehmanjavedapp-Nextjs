@@ -2,7 +2,6 @@ import { FunctionComponent, useState } from "react";
 import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import { IProject } from "../types";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeInUp, stagger } from "../animations";
 
@@ -23,12 +22,11 @@ const ProjectCard: FunctionComponent<{
 
   return (
     <div>
-      <Image
+      <img
         src={image_path}
         alt={name}
         className="cursor-pointer"
         onClick={() => setShowDetail(true)}
-        layout="responsive"
         height="150"
         width="300"
       />
@@ -45,24 +43,24 @@ const ProjectCard: FunctionComponent<{
           <motion.div variants={stagger} initial="initial" animate="animate">
             {/* <img src={image_path} alt={name} /> */}
 
-            <motion.div variants={fadeInUp} >
-              <Image
+            <motion.div variants={fadeInUp}>
+              <img
                 src={image_path}
                 alt={name}
-                layout="responsive"
-                height="150"
-                width="300"
+                style={{ maxWidth: "100%", height: "auto" }}
               />
             </motion.div>
             <div className="flex justify-center my-4 space-x-3">
               <a
                 href={github_url}
+                target="_blank"
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
               <a
                 href={deployed_url}
+                target="_blank"
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillProject /> <span>Project</span>
@@ -71,10 +69,20 @@ const ProjectCard: FunctionComponent<{
           </motion.div>
 
           <motion.div variants={stagger} initial="initial" animate="animate">
-            <motion.h2 variants={fadeInUp} className="mb-3 text-xl font-medium md:text-2xl">{name}</motion.h2>
-            <motion.h3 variants={fadeInUp} className="mb-3 font-medium">{description}</motion.h3>
+            <motion.h2
+              variants={fadeInUp}
+              className="mb-3 text-xl font-medium md:text-2xl"
+            >
+              {name}
+            </motion.h2>
+            <motion.h3 variants={fadeInUp} className="mb-3 font-medium">
+              {description}
+            </motion.h3>
 
-            <motion.div variants={fadeInUp} className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider">
+            <motion.div
+              variants={fadeInUp}
+              className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider"
+            >
               {key_techs.map((tech) => (
                 <span
                   key={tech}
