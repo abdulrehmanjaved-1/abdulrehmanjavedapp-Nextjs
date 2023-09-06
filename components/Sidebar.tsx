@@ -1,9 +1,9 @@
-import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
+import { AiFillGithub, AiFillYoutube } from "react-icons/ai";
 import { GiTie } from "react-icons/gi";
 import { GoLocation } from "react-icons/go";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
 
@@ -13,17 +13,19 @@ const Sidebar = () => {
 
   return (
     <>
-      <Image
-        src="https://sumitdey.netlify.app/static/media/max.9d3a6d3e.jpg"
-        alt="avatar"
-        className=" mx-auto border rounded-full "
-        height="128px"
-        width="128px"
-        layout="intrinsic"
-        quality="100"
-      />
+  {/* <Image
+  src="/public/assets/About_ME.jpg"
+  alt="avatar"
+  className="mx-auto border rounded-full"
+  height={128}
+  width={128}
+  layout="intrinsic"
+  quality={100}
+/> */}
+<img src="/assets/hello.jpeg" className="rounded-md" alt="Hello" />
+
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
-        <span className="text-green ">Sumit</span> Dey
+        <span className="text-green ">AbdulRehman</span> Javed
       </h3>
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">
         Web Developer
@@ -40,14 +42,14 @@ const Sidebar = () => {
 
       {/* Socials */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full ">
-        <a href="https://www.youtube.com/channel/UClW8d1f5m0QAE_Ig024EP6A">
-          <AiFillYoutube className="w-8 h-8 cursor-pointer" />
+        <a href="https://www.github.com/abdulrehmanjaved-1" target="_blank">
+          <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="https://www.linkedin.com/in/sumit-dey-4a04431a9/" >
-          <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
+        <a href="https://www.facebook.com/abdulrehman.javed.984" target="_blank" >
+          <FaFacebook className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="https://www.instagram.com/_sumax__/">
-          <AiFillGithub className="w-8 h-8 cursor-pointer" />{" "}
+        <a href="https://www.instagram.com/__abdulrehmanjaved__/ " target="_blank">
+          <FaInstagram className="w-8 h-8 cursor-pointer" />{" "}
         </a>
       </div>
 
@@ -57,17 +59,17 @@ const Sidebar = () => {
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
         <div className="flex items-center justify-center">
-          <GoLocation className="mr-2" /> <span>Kolkata,India </span>
+          <GoLocation className="mr-2" /> <span>Lahore, Pakistan</span>
         </div>
-        <p className="my-2 "> code.sumax@gmail.com </p>
-        <p className="my-2"> 8514961665 / 8640960375 </p>
+        <p className="my-2 ">abdulrehmanjaveds12</p><span>@gmail.com</span>
+        <p className="my-2"> 03244078538 / cell </p>
       </div>
 
       {/* Email Button */}
 
       <button
         className="w-8/12 px-5 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500 hover:scale-105 focus:outline-none"
-        onClick={() => window.open("mailto:code.sumax@gmail.com")}
+        onClick={() => window.open("mailto:abdulrehmanjaveds12@gmail.com")}
       >
         Email me
       </button>

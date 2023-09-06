@@ -1,46 +1,48 @@
 import { RiComputerLine } from "react-icons/ri";
-import { FaServer } from "react-icons/fa";
-import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
+import { FaServer,FaDatabase } from "react-icons/fa";
+import { AiOutlineAntDesign, AiTwotoneApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
 import { IProject, Service, Skill } from "./types";
 
 import { BsCircleFill } from "react-icons/bs";
+import { SiDocker } from "react-icons/si";
 
 export const services: Service[] = [
   {
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+      "I can build a scalable SPA/MPA using <b> React.js</b>, <b>Next.js</b>, <b>Framer Motion</b> and <b>Three.js</b>",
   },
   {
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "handle database, server, api using <b>Express </b> & other popular frameworks",
+      "handle databases, using <b>Express </b> & other popular frameworks or using headless CMS like <b>Sanity</b>",
   },
   {
-    Icon: AiOutlineApi,
+    Icon: AiTwotoneApi,
     title: "API Development",
     about:
-      "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
+      "Develop robust  REST API using <b>Node</b>, GROQ API using <b>Sanity Studio</b> and Graphql using <b>Apollo</b> ",
+  },
+ 
+  {
+    Icon: FaDatabase,
+    title: "Database Developer",
+    about:
+      "Use <b>Postgresql</b>,<b>Redis</b>,<b>Mongodb</b> to develop complex aggregation pipelines with ORM like <b>Prisma</b>"
+  },
+  {
+    Icon: SiDocker,
+    title: "DevOps Engineer",
+    about:
+      "Skilled in Docker, Kubernetes, and CI/CD for streamlined containerization" ,
   },
   {
     Icon: MdDeveloperMode,
     title: "Competitive Coder",
     about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
-  },
-  {
-    Icon: AiOutlineAntDesign,
-    title: "UI/UX designer",
-    about:
-      "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
-  },
-  {
-    Icon: RiComputerLine,
-    title: "Whatever",
-    about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
   },
 ];
 
@@ -53,28 +55,36 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "Java Script",
-    level: "60",
+    level: "80",
   },
   {
     Icon: BsCircleFill,
     name: "React Native",
-    level: "80",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "React",
     level: "70",
   },
   {
     Icon: BsCircleFill,
-    name: "Django",
+    name: "React",
     level: "80",
   },
   {
     Icon: BsCircleFill,
-    name: "Bootstrap",
+    name: "Three",
+    level: "60",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "TailwindCSS",
     level: "80",
   },
+  
+  {
+    Icon: BsCircleFill,
+    name: "Graphql",
+    level: "85",
+  }
+  
+
 ];
 
 export const tools: Skill[] = [
@@ -85,18 +95,23 @@ export const tools: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "Photoshop",
-    level: "45",
+    name: "WordPress",
+    level: "50",
   },
   {
     Icon: BsCircleFill,
-    name: "Illustrator",
-    level: "60",
+    name: "Docker",
+    level: "90",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Atom",
+    level: "40",
   },
   {
     Icon: BsCircleFill,
     name: "Framer",
-    level: "45",
+    level: "55",
   },
 ];
 

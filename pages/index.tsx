@@ -8,17 +8,24 @@ import {
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 import { Service } from "../types";
+import { motion } from "framer-motion";
+import { fadeInUp, routeAnimation, stagger } from "../animations";
 
 const About: NextPage = () => {
   // console.log(services);
 
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1 ">
+    <motion.div
+      className="flex flex-col flex-grow px-6 pt-1"
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <h6 className="my-3 text-base font-medium">
-        I am currently pursuing B.Tech Degree(Final Year) in Computer Science
-        Engineering from Academy of Technology. I have 3+ years of experience in
-        Web Development and I have a Youtube Channel where I teach Full Stack
-        Web Development
+        I am currently pursuing BS Degree in Information Technology Engineering.
+        I have 5+ years of experience in Tech Industry and I have many happy
+        clients all over the world and on different freelancing workplaces.
       </h6>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 "
@@ -28,19 +35,25 @@ const About: NextPage = () => {
           What I am doing
         </h4>
 
-        <div className="grid gap-6 my-3 md:grid-cols-2">
+        <motion.div
+          variants={stagger}
+          initial="initial"
+          animate="animate"
+          className="grid gap-6 my-3 md:grid-cols-2"
+        >
           {/* children's initial and animate property should be same as the parent during a stagger effect  */}
           {services.map((service) => (
-            <div
+            <motion.div
               className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 md:col-span-1 "
               key={service.title}
+              variants={fadeInUp}
             >
               <ServiceCard service={service} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
