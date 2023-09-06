@@ -22,10 +22,10 @@ const Sidebar = () => {
   layout="intrinsic"
   quality={100}
 /> */}
-<img src="/assets/hello.jpeg" className="rounded-md" alt="Hello" />
+<img src="/assets/hello.jpeg" className="mx-auto border rounded-full" alt="Hello" width={128} height={128} />
 
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
-        <span className="text-green ">AbdulRehman</span> Javed
+        <span className="text-green-500 ">AbdulRehman</span> Javed
       </h3>
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">
         Web Developer
@@ -41,7 +41,7 @@ const Sidebar = () => {
       </a>
 
       {/* Socials */}
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full ">
+      <div className="flex justify-around w-9/12 mx-auto my-5 text-green-500 md:w-full ">
         <a href="https://www.github.com/abdulrehmanjaved-1" target="_blank">
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
@@ -68,14 +68,14 @@ const Sidebar = () => {
       {/* Email Button */}
 
       <button
-        className="w-8/12 px-5 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500 hover:scale-105 focus:outline-none"
+        className="w-8/12 px-5 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green-500 to-green-500 hover:scale-105 focus:outline-none"
         onClick={() => window.open("mailto:abdulrehmanjaveds12@gmail.com")}
       >
         Email me
       </button>
       <button
         onClick={changeTheme}
-        className="w-8/12 px-5 py-2 my-4 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500 focus:outline-none hover:scale-105 "
+        className="w-8/12 px-5 py-2 my-4 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green-500 to-green-500 focus:outline-none hover:scale-105 "
       >
         {/* //TODO remove bg black */}
         Toggle Theme
