@@ -8,6 +8,8 @@ import {
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 import { Service } from "../types";
+import Head from "next/head";
+
 import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation, stagger } from "../animations";
 
@@ -22,6 +24,9 @@ const About: NextPage = () => {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Web Developer | Portfolio | Abdulrehman</title>
+      </Head>
       <h6 className="my-3 text-base font-medium">
         I am currently pursuing BS Degree in Information Technology Engineering.
         I have 5+ years of experience in Tech Industry and I have many happy
