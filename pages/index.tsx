@@ -27,11 +27,11 @@ const About: NextPage = () => {
       <Head>
         <title>Web Developer | Portfolio | Abdulrehman</title>
       </Head>
-      <h2 className="my-3 text-base font-medium">
+      <h1 className="my-3 text-base font-medium">
         I am currently pursuing BS Degree in Information Technology Engineering.
         I have 5+ years of experience in Tech Industry and I have many happy
         clients all over the world and on different freelancing workplaces.
-      </h2>
+      </h1>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 "
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
