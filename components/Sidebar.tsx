@@ -13,16 +13,16 @@ const Sidebar = () => {
 
   return (
     <>
-  {/* <Image
-  src="/public/assets/About_ME.jpg"
+  <Image
+  src="/assets/hello.jpeg"
   alt="avatar"
   className="mx-auto border rounded-full"
-  height={128}
-  width={128}
+  height={200}
+  width={140}
   layout="intrinsic"
   quality={100}
-/> */}
-<img src="/assets/hello.jpeg" className="mx-auto border rounded-full" alt="Hello" width={128} height={128} />
+/>
+{/* <img src="/assets/hello.jpeg" className="mx-auto border rounded-full" alt="Hello" width={128} height={128} /> */}
 
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
         <span className="text-green-500 ">AbdulRehman</span> Javed

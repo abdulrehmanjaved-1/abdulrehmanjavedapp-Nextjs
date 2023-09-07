@@ -4,6 +4,7 @@ import { MdClose } from "react-icons/md";
 import { IProject } from "../types";
 import { motion } from "framer-motion";
 import { fadeInUp, stagger } from "../animations";
+import Image from "next/image";
 
 const ProjectCard: FunctionComponent<{
   project: IProject;
@@ -22,14 +23,24 @@ const ProjectCard: FunctionComponent<{
 
   return (
     <div>
-      <img
+      <Image
+        src={image_path}
+        alt={name}
+        className="cursor-pointer"
+        onClick={() => setShowDetail(true)}
+        height={150}
+        width={300}
+        layout="intrinsic"
+        quality={100}
+      />
+      {/* <img
         src={image_path}
         alt={name}
         className="cursor-pointer"
         onClick={() => setShowDetail(true)}
         height="150"
         width="300"
-      />
+      /> */}
       {/* <img
         src={image_path}
         alt={name}
@@ -44,10 +55,14 @@ const ProjectCard: FunctionComponent<{
             {/* <img src={image_path} alt={name} /> */}
 
             <motion.div variants={fadeInUp}>
-              <img
+              <Image
                 src={image_path}
                 alt={name}
-                style={{ maxWidth: "100%", height: "auto" }}
+                width={250}
+                height={150}
+                layout="responsive"
+                objectFit="contain"
+                className="cursor-pointer"
               />
             </motion.div>
             <div className="flex justify-center my-4 space-x-3">
