@@ -17,8 +17,8 @@ const Sidebar = () => {
   src="/assets/hello.jpeg"
   alt="avatar"
   className="mx-auto border rounded-full"
-  height={200}
-  width={140}
+  height={722}
+  width={384}
   layout="intrinsic"
   quality={100}
 />

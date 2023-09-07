@@ -28,8 +28,8 @@ const ProjectCard: FunctionComponent<{
         alt={name}
         className="cursor-pointer"
         onClick={() => setShowDetail(true)}
-        height={150}
-        width={300}
+        height={426}
+        width={640}
         layout="intrinsic"
         quality={100}
       />
