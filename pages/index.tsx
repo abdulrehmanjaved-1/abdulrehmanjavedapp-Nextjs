@@ -29,7 +29,7 @@ const About: NextPage = () => {
       </Head>
       <h1 className="my-3 text-base font-medium">
         I am currently pursuing BS Degree in Information Technology Engineering.
-        I have 5+ years of experience in Tech Industry and I have many happy
+        I have 3+ years of experience in Tech Industry and I have many happy
         clients all over the world and on different freelancing workplaces.
       </h1>
       <div

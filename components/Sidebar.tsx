@@ -1,7 +1,7 @@
 import { AiFillGithub, AiFillYoutube } from "react-icons/ai";
 import { GiTie } from "react-icons/gi";
 import { GoLocation } from "react-icons/go";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 const Sidebar = () => {
@@ -48,8 +48,8 @@ const Sidebar = () => {
         <a href="https://www.facebook.com/abdulrehman.javed.984" target="_blank" aria-label="Facebook" >
           <FaFacebook className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="https://www.instagram.com/__abdulrehmanjaved__/ " target="_blank" aria-label="Instagram">
-          <FaInstagram className="w-8 h-8 cursor-pointer" />{" "}
+        <a href="https://www.linkedin.com/in/abdulrehman-javed-a20208291/ " target="_blank" aria-label="Instagram">
+          <FaLinkedin className="w-8 h-8 cursor-pointer" />{" "}
         </a>
       </div>
 
